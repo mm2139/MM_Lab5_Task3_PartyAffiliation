@@ -11,11 +11,11 @@ public class PartyAffiliation {
 
         if (scan.hasNextLine()) {
             userParty = scan.nextLine();
-            if (userParty.equals("D")) {
+            if (userParty.equalsIgnoreCase("D")) {
                 System.out.println("You are a Democrat, who's mascot is a Donkey.");
-            } else if (userParty.equals("R")) {
+            } else if (userParty.equalsIgnoreCase("R")) {
                 System.out.println("You are a Republican, who's mascot is a Elephant.");
-            } else if (userParty.equals("I")) {
+            } else if (userParty.equalsIgnoreCase("I")) {
                 System.out.println("You are Independent, who's mascot is a Person.");
             } else {
                 System.out.println("You have inputted an invalid response.");
